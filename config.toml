@@ -7,7 +7,7 @@ theme = "terminal"
 [params]
   Title = "BEFORE YOUR CODE IS A WAR HERO, IT IS A SOLDIER"
   Subtitle = ""
-  showMenuItems = 2
+  showMenuItems = 3
 
 [menu]
   [[menu.main]]
