@@ -1,8 +1,7 @@
 +++
-title = "Trang Chủ"
-date = 2025-10-16T15:30:00Z
-type = "home"  # Dòng này quan trọng!
+date = '2025-10-16T10:09:31Z'
+draft = true
+title = ''
 +++
-
-# WELCOME MY FRIEND
+TEST
 See you soon!
