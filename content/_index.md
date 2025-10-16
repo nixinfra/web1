@@ -1,8 +1,11 @@
 +++
-date = '2025-10-16T10:09:31Z'
 draft = false
-title = 'BEFORE A HERO, BE A WARRIOR'
+title = 'Chào Mừng' 
 type = "home"
 +++
-TEST
-See you soon!
+
+# BEFORE YOUR CODE IS A WAR HERO, IT IS A SOLDIER 
+
+## A blog about System and Network
+
+Chào mừng đến với Blog Nixinfra. Hãy chọn một chủ đề từ menu bên trên để bắt đầu!
