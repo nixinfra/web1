@@ -1,12 +1,14 @@
 # config.toml
 baseURL = "https://nixinfra.com/"
 languageCode = "en-us"
-title = "BE A HERO, BE A WARRIOR"
+title = "nixinfra.com"
 theme = "terminal"
 
 [params]
+  Title = "BEFORE YOUR CODE IS A WAR HERO, IT IS A SOLDIER"
   description = "A blog about Network and System"
-  Subtitle = "A blog about System and Network"
+  Subtitle = ""
+  showMenuItems = 3
 
 [menu]
   [[menu.main]]
