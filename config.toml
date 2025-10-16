@@ -1,0 +1,36 @@
+# config.toml
+baseURL = "https://nixinfra.com/"
+languageCode = "en-us"
+title = "nixinfra.com"
+theme = "terminal"
+
+[params]
+  Title = "BEFORE YOUR CODE IS A WAR HERO, IT IS A SOLDIER"
+  Subtitle = ""
+  showMenuItems = 2
+
+[menu]
+  [[menu.main]]
+    name = "LINUX"
+    url = "/categories/linux/"
+    weight = 10
+  [[menu.main]]
+    name = "WINDOWS"
+    url = "/categories/windows/"
+    weight = 20
+  [[menu.main]]
+    name = "CISCO"
+    url = "/categories/cisco/"
+    weight = 30
+  [[menu.main]]
+    name = "SHORT"
+    url = "/categories/short/"
+    weight = 40
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
