@@ -10,7 +10,7 @@ theme = 'hugo-theme-relearn'
   themeVariant = "relearn-light"
   themeVariants = ["relearn-light", "relearn-dark", "relearn-auto"]
   alwaysopen = false
-  logo = "/images/sysnethub_logo.jpg"
+  logo = "/images/logo.png"
 
 [taxonomies]
   category = "categories"
