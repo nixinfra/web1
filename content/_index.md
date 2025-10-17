@@ -8,4 +8,3 @@ type = "home"
 
 ## A blog about System and Network
 
-Chào mừng đến với Blog Nixinfra. Hãy chọn một chủ đề từ menu bên trên để bắt đầu!
