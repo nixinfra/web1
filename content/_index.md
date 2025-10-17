@@ -10,31 +10,25 @@ Welcome to **SysNetHub** – Your Hub for Practical, Essential Knowledge in Netw
 
 ## **{{< icon "fas fa-cogs" >}} The Importance of Network and System Infrastructure**
 
-<span style="font-size: 1.1em; font-weight: bold;">No System, No Service. No Network, No Connection.</span>
+<p style="font-size: 1.1em; font-weight: bold; margin-top: 10px;">No System, No Service. No Network, No Connection.</p>
 
-{{< expand "Click here to read our full Ethos on Infrastructure" >}}
 Every click, every application, every AI model – all rely on a foundation that most people tend to overlook. System and Network infrastructure is not just a part of IT, it is the core that enables every other field to be possible. From the data center to the cloud platform, from AI reasoning to IoT devices – nothing can operate without a solid backbone. Here, we build, refine, and advance it with you.
-{{< /expand >}}
 
 ## **{{< icon "fas fa-angle-double-right" >}} No Basics, No Advance.**
 
-<span style="font-size: 1.1em; font-weight: bold;">No Basics, No Advance.</span>
+<p style="font-size: 1.1em; font-weight: bold; margin-top: 10px;">No Basics, No Advance.</p>
 
-{{< expand "Click here to read our philosophy on foundational knowledge" >}}
 Everyone is chasing the next great thing – AI, cloud computing, automation, whatever is coming next. But to stand firm and thrive in this ever-demanding era, you need to understand the fundamentals – the systems, the networking, the very platform everything is built upon. The deeper you understand the basics, the further you can advance. No solid foundation, no long-term progress.
-{{< /expand >}}
 
 ## **{{< icon "fas fa-feather-alt" >}} Website Ethos:**
 
-<span style="font-size: 1.1em; font-weight: bold;">Website Ethos:</span>
+<p style="font-size: 1.1em; font-weight: bold; margin-top: 10px;">Website Ethos:</p>
 
-{{< expand "Click here to read our commitment to conciseness" >}}
 No fanfare or elaborate prose. We get straight to the point, presenting content as concisely as possible to help users quickly learn, search, and apply knowledge.
-{{< /expand >}}
 
 ## **{{< icon "fas fa-users" >}} Target Audience:**
 
-<span style="font-size: 1.1em; font-weight: bold;">Who SysNetHub is built for:</span>
+<p style="font-size: 1.1em; font-weight: bold; margin-top: 10px;">Who SysNetHub is built for:</p>
 
 - **{{< icon "fas fa-graduation-cap" >}}** Beginners and students needing to learn Network and System knowledge.
 - **{{< icon "fas fa-certificate" >}}** Individuals seeking to refresh knowledge for relevant certification exams related to networking and systems.
