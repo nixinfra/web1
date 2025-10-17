@@ -1,34 +1,23 @@
 # config.toml
 baseURL = "https://nixinfra.com/"
 languageCode = "en-us"
+defaultContentLanguage = "en"
 title = "SysNetHub"
 theme = 'hugo-theme-relearn'
 
 [params]
-  Subtitle = "A blog about System and Network"
-
-[menu]
-  [[menu.main]]
-    name = "LINUX"
-    url = "/categories/linux/"
-    weight = 10
-  [[menu.main]]
-    name = "WINDOWS"
-    url = "/categories/windows/"
-    weight = 20
-  [[menu.main]]
-    name = "CISCO"
-    url = "/categories/cisco/"
-    weight = 30
-  [[menu.main]]
-    name = "SHORT"
-    url = "/categories/short/"
-    weight = 40
+  Subtitle = "A Blog about network and system infrastructures"
+  themeVariant = ["relearn-light", "relearn-dark", "relearn-auto"]
+  alwaysopen = false
 
 [taxonomies]
   category = "categories"
   tag = "tags"
+  series = "series"
 
 [markup]
   [markup.highlight]
-    style = "monokai"
+    style = "monokai"         # Đã giữ phong cách code block bạn chọn
+    noClasses = false         # Quan trọng cho cú pháp Relearn
+    codeFences = true
+    guessSyntax = true
