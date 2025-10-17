@@ -1,7 +1,7 @@
 # config.toml
 baseURL = "https://nixinfra.com/"
 languageCode = "en-us"
-title = "JUVENTUS"
+title = "NIXINFRA"
 theme = 'hugo-theme-relearn'
 
 [params]
