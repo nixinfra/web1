@@ -2,7 +2,7 @@
 baseURL = "https://nixinfra.com/"
 languageCode = "en-us"
 title = "JUVENTUS"
-theme = "terminal"
+theme = 'hugo-theme-relearn'
 
 [params]
   description = "testing..."
