@@ -1,11 +1,10 @@
 # config.toml
 baseURL = "https://nixinfra.com/"
 languageCode = "en-us"
-title = "NIXINFRA"
+title = "SysNetHub"
 theme = 'hugo-theme-relearn'
 
 [params]
-  description = "testing..."
   Subtitle = "A blog about System and Network"
 
 [menu]
