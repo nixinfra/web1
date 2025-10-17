@@ -7,7 +7,7 @@ theme = 'hugo-theme-relearn'
 
 [params]
   # Subtitle = "A Blog about network and system infrastructures"
-  themeVariant = ["relearn-light"]
+  themeVariant = "relearn-light"
   themeVariants = ["relearn-light", "relearn-dark", "relearn-auto"]
   alwaysopen = false
 
