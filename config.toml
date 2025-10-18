@@ -11,6 +11,7 @@ theme = 'hugo-theme-relearn'
   themeVariants = ["relearn-light", "relearn-dark", "relearn-auto"]
   alwaysopen = false
   logo = "/images/logo.png"
+  custom_css = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"]
 
 [taxonomies]
   category = "categories"
@@ -23,5 +24,7 @@ theme = 'hugo-theme-relearn'
     noClasses = false         # Quan trọng cho cú pháp Relearn
     codeFences = true
     guessSyntax = true
-  [markup.goldmark.render]    
-    unsafe = true              # dung de render HTML inline
+
+  [markup.goldmark]
+    [markup.goldmark.render]    
+      unsafe = true              # dung de render HTML inline
