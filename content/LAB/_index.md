@@ -1,5 +1,5 @@
 ---
-title: "{{< icon "fa-solid fa-vial-virus" >}} LAB"
+title: "{{< icon \"fa-solid fa-vial-virus\" >}} LAB"
 description: Configure and deploy some network and system services.
 weight: 20 # LAB đứng thứ hai
 ---
