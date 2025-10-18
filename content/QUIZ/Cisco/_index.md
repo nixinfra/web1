@@ -1,5 +1,5 @@
 ---
-title: "{{< icon "fa-network-wired" >}} Cisco"
+title: "Cisco"
 weight: 20 # 
 ---
 Cisco Networking Quizzes.
