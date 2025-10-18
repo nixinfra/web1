@@ -21,6 +21,9 @@ System and Network infrastructure is not just a part of IT, it is the core that 
 From the data center to the cloud platform, from AI reasoning to IoT devices – nothing can operate without a solid backbone.  
 Here, we build, refine, and advance it with you.
 
+</div>
+
+<div style="margin-left: 20px; text-align: justify">
 
 ### No Basics, No Advance.
 
