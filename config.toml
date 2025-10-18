@@ -23,8 +23,4 @@ theme = 'hugo-theme-relearn'
     noClasses = false         # Quan trọng cho cú pháp Relearn
     codeFences = true
     guessSyntax = true
-  [markup.goldmark]                  # dung de fix loi hien thi shortcode trong TOC
-    [markup.goldmark.renderer]
-      unsafe = true
-  [markup.renderHooks]
-    heading = "render-heading.html"
+    unsafe = true              # dung de render HTML inline

@@ -1,4 +1,0 @@
-{{/* layouts/_default/_markup/render-heading.html */}}
-{{- $plain := .Plain | safeHTML -}}
-{{- $clean := replaceRE "{{<.*?>}}" "" $plain -}}
-<h{{ .Level }} id="{{ .Anchor | safeURL }}">{{ $clean | safeHTML }}</h{{ .Level }}>
