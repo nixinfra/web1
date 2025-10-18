@@ -18,7 +18,7 @@ Welcome to **SysNetHub** – Your Hub for Practical, Essential Knowledge in Netw
 Every click, every application, every AI model – all rely on a foundation that most people tend to overlook.  
 System and Network infrastructure is not just a part of IT, it is the core that enables every other field to be possible.  
 From the data center to the cloud platform, from AI reasoning to IoT devices – nothing can operate without a solid backbone.  
-Here, we build, refine, and advance it with you. {{< icon "fa-solid fa-feather-alt" >}}
+Here, we build, refine, and advance it with you.
 
 
 ### 1.2. No basics, No advance.
@@ -38,9 +38,9 @@ No fanfare or elaborate prose. We get straight to the point, presenting content 
 
 ## 3. Target Audience
 
-- <i class="fas fa-user-graduate"></i> Beginners and students needing to learn Network and System knowledge.  
-- <i class="fas fa-certificate"></i> Individuals seeking to refresh knowledge for relevant certification exams related to networking and systems.  
-- <i class="fas fa-briefcase"></i> Working professionals who need to update knowledge or quickly look up information for application.
+- Beginners and students needing to learn Network and System knowledge.  
+- Individuals seeking to refresh knowledge for relevant certification exams related to networking and systems.  
+- Working professionals who need to update knowledge or quickly look up information for application.
 
 ---
 
