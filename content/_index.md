@@ -10,10 +10,10 @@ Welcome to **SysNetHub** – Your Hub for Practical, Essential Knowledge in Netw
 
 ---
 
-## 1. The Importance of Network and System Infrastructure
+## {{< icon "fa-solid fa-cogs" >}} The Importance of Network and System Infrastructure
 
 
-### 1.1. No System, No Service. No Network, No Connection.
+### {{< icon "fa-solid fa-forward" >}} No System, No Service. No Network, No Connection.
 
 Every click, every application, every AI model – all rely on a foundation that most people tend to overlook.  
 System and Network infrastructure is not just a part of IT, it is the core that enables every other field to be possible.  
@@ -21,7 +21,7 @@ From the data center to the cloud platform, from AI reasoning to IoT devices –
 Here, we build, refine, and advance it with you.
 
 
-### 1.2. No Basics, No Advance.
+### {{< icon "fa-solid fa-forward" >}} No Basics, No Advance.
 
 Everyone is chasing the next great thing – AI, cloud computing, automation, whatever is coming next.  
 But to stand firm and thrive in this ever-demanding era, you need to understand the fundamentals – the systems, the networking, the very platform everything is built upon.  
@@ -30,13 +30,13 @@ No solid foundation, no long-term progress.
 
 ---
 
-## 2. Website Ethos
+## {{< icon "fa-solid fa-feather-alt" >}} Website Ethos
 
 No fanfare or elaborate prose. We get straight to the point, presenting content as concisely as possible to help users quickly learn, search, and apply knowledge.
 
 ---
 
-## 3. Target Audience
+## {{< icon "fa-solid fa-users" >}} Target Audience
 
 - <i class="fas fa-user-graduate"></i> Beginners and students needing to learn Network and System knowledge.  
 - <i class="fas fa-certificate"></i> Individuals seeking to refresh knowledge for relevant certification exams related to networking and systems.  
