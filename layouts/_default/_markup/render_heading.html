@@ -1,0 +1,6 @@
+{{- $clean := .Text | plainify | htmlUnescape | safeHTML -}}
+{{- $real := .Text | safeHTML -}}
+
+<h{{ .Level }} id="{{ .Anchor | safeURL }}">
+  {{ $real }}
+</h{{ .Level }}>
