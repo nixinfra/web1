@@ -1,5 +1,5 @@
 ---
-title: "{{icon \"fa-solid fa-book-bookmark\" >}} NOTES"
+title: "<i class=\"fa-solid fa-book-bookmark\"></id> NOTES"
 description: Quickly look up some tips and cheat sheets related to the knowledge.
 weight: 30 # SHORT NOTES đứng cuối cùng
 ---

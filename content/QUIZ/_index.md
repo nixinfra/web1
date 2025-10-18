@@ -1,5 +1,5 @@
 ---
-title: "{{<icon \"fa-solid fa-clipboard-question\" >}} QUIZ"
+title: "<i class=\"fa-solid fa-clipboard-question\"></i> QUIZ"
 description: Take quick quizzes to review or refresh related knowledge.
 weight: 10 
 ---
