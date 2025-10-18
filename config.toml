@@ -23,4 +23,5 @@ theme = 'hugo-theme-relearn'
     noClasses = false         # Quan trọng cho cú pháp Relearn
     codeFences = true
     guessSyntax = true
+  [markup.goldmark.render]    
     unsafe = true              # dung de render HTML inline
