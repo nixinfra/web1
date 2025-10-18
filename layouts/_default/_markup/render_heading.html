@@ -1,6 +1,10 @@
-{{- $clean := .Text | plainify | htmlUnescape | safeHTML -}}
-{{- $real := .Text | safeHTML -}}
+{{ $clean := .Text | plainify | htmlUnescape | safeHTML }}
+{{ $real := .Text | safeHTML }}
 
 <h{{ .Level }} id="{{ .Anchor | safeURL }}">
   {{ $real }}
 </h{{ .Level }}>
+
+{{/* Fix TOC in Relearn: store plain text for sidebar generation */}}
+{{ $storeKey := printf "heading-%d" .Ordinal }}
+{{ .Page.Store.Set $storeKey $clean }}
