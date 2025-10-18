@@ -13,6 +13,7 @@ Welcome to **SysNetHub** – Your Hub for Practical, Essential Knowledge in Netw
 ## **<i class="fas fa-cogs"></i> The Importance of Network and System Infrastructure**
 
 <div style="padding-left: 20px; text-align: justify">
+
 ### No System, No Service. No Network, No Connection.
 
 Every click, every application, every AI model – all rely on a foundation that most people tend to overlook.  
