@@ -1,6 +1,5 @@
 ---
-# title: "NOTES"
-linkTitle: '<i class="fas fa-book-bookmark"></i> NOTES'
+title: "NOTES"
 description: Quickly look up some tips and cheat sheets related to the knowledge.
 weight: 30 # SHORT NOTES đứng cuối cùng
 ---

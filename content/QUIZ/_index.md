@@ -1,7 +1,6 @@
 ---
-# title: "QUIZ"
+title: "QUIZ"
 description: Take quick quizzes to review or refresh related knowledge.
-linkTitle: '<i class="fas fa-clipboard-question"></i> QUIZ'
 weight: 10
 ---
 # QUIZ INTRODUCE

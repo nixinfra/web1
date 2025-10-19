@@ -1,7 +1,5 @@
 ---
-# title: "LAB"
-linkTitle: '<i class="fas fa-vial-virus"></i> LAB'
-description: Configure and deploy some network and system services.
+title: "LAB"
 weight: 20 # LAB đứng thứ hai
 ---
 # LAB INTRODUCE
