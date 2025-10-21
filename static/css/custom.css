@@ -21,30 +21,34 @@
 
 
 @media screen and (max-width: 768px) {
-    /* Ghi đè biến CSS gốc của theme để giảm font size chung (body text) */
-    :root, body, article {
-        /* Giảm font size gốc xuống 0.85rem (thay vì 1.0625rem) */
+    /* Ghi đè biến CSS gốc của theme (giúp giảm font chữ chung) */
+    :root, body {
+        /* Giảm font size gốc xuống 0.85rem (hoặc 14px) */
         --INTERNAL-MAIN-FONT-SIZE: 0.85rem !important; 
+        font-size: 14px !important; /* Thêm fallback cho body */
     }
     
-    /* H1: Giảm mạnh nhất */
-    body .r-content h1 { 
-        font-size: 1.8em !important; 
-        line-height: 1.2; 
+    /* Nhắm mục tiêu trực tiếp vào TẤT CẢ các thẻ H1, H2, H3 trong toàn bộ DOM */
+    h1, .content h1 {
+        font-size: 1.8em !important; /* Vẫn lớn nhất */
+        line-height: 1.2;
     }
     
-    /* H2: Đặt là 1.5em */
-    body .r-content h2 { 
-        font-size: 1.5em !important; 
+    h2, .content h2 { 
+        font-size: 1.5em !important; /* Vẫn đặt là 1.5em */
         line-height: 1.3; 
     }
     
-    /* H3: Đặt bé hơn H2 (1.5em -> 1.2em) để tạo phân cấp rõ ràng */
-    body .r-content h3 { 
-        font-size: 1.2em !important; 
+    h3, .content h3 { 
+        font-size: 1.2em !important; /* Bé hơn H2 để phân cấp */
         line-height: 1.4;
     }
-
+    
+    /* Đảm bảo nội dung chữ thường cũng nhỏ lại */
+    .r-content p, .r-content li {
+        font-size: 1em !important; 
+    }
+    
     /* Đảm bảo khung nội dung không bị tràn */
     .r-content {
         word-wrap: break-word;
