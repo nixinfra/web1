@@ -1,23 +1,31 @@
-/* Sử dụng Selector để nhắm vào thẻ <li> của NOTES */
-li[data-nav-url="/notes/index.html"] {
-    /* Đảm bảo nó là một block để border kéo dài hết chiều rộng */
-    display: block !important; 
-    
-    /* Thiết lập đường viền dưới màu đen */
-    border-bottom: 1px solid white !important;
-    
-    /* Thêm khoảng đệm bên trong mục NOTES để đường kẻ không dính sát chữ */
-    padding-bottom: 5px !important; 
-    
-    /* Thêm khoảng cách bên ngoài đường kẻ, để tách NOTES khỏi About */
-    margin-bottom: 10px !important; 
+/* 1. Nhắm vào thẻ <a> bên trong thẻ <li> của NOTES */
+li[data-nav-url="/notes/index.html"] > a {
+    /* Quan trọng: Bật vị trí tương đối để định vị đường kẻ */
+    position: relative; 
+    /* Đảm bảo nó hiển thị đầy đủ */
+    display: block !important;
+    /* Thêm khoảng đệm dưới để đường kẻ không dính sát chữ */
+    padding-bottom: 10px; 
 }
 
-/* Tùy chọn: Đảm bảo đường viền không cắt ngang text */
-/* Theme Relearn thường có padding ở thẻ <a>, nên đôi khi cần border cho thẻ <a>. */
-/* Nếu border trên <li> không hoạt động, hãy thử nhắm vào thẻ <a> bên trong nó: */
-li[data-nav-url="/notes/index.html"] > a {
-    /* Quan trọng: Thêm padding-bottom cho <a> nếu bạn dùng border trên <li>, 
-       để đường kẻ nằm bên ngoài padding của <li> */
-    /* Nếu bạn dùng border trên <li>, thường không cần thay đổi <a>. */
+/* 2. Tạo phần tử giả (pseudo-element) ::after để làm đường kẻ */
+li[data-nav-url="/notes/index.html"] > a::after {
+    content: ""; /* Bắt buộc phải có content */
+    display: block;
+    
+    /* Thiết lập vị trí: Nằm ở đáy của thẻ <a> */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    /* Kích thước và Màu sắc */
+    width: 100%;
+    height: 1px;
+    background-color: white; /* Đổi màu sang trắng */
+}
+
+/* 3. Thêm margin cho mục About để tạo khoảng cách */
+/* Nhắm vào mục About (nằm ngay sau NOTES) để đẩy nó xuống một chút */
+li[data-nav-url="/about/index.html"] {
+    margin-top: 15px !important;
 }

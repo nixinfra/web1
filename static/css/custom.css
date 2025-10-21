@@ -62,7 +62,7 @@
 /* Selector phổ biến cho các mục menu trong theme Learn/Relearn */
 .td-sidebar a[href*="/notes/"] { 
     /* Thêm đường viền dưới cho liên kết */
-    border-bottom: 1px solid black !important;
+    border-bottom: 1px solid white !important;
     /* Thêm khoảng đệm để đường kẻ không dính vào chữ */
     padding-bottom: 5px; 
     /* Thêm khoảng cách sau đường kẻ */
