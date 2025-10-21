@@ -1,6 +1,6 @@
-#R-logo img {
-    max-height: 50px !important; /* Giữ nguyên chiều cao tối đa */
-    width: auto !important;     /* Tự động điều chỉnh chiều rộng để giữ tỉ lệ */
-    height: auto !important;    /* Đảm bảo tỉ lệ */
-    object-fit: contain;        /* Đảm bảo ảnh nằm gọn trong khung */
+#R-logo .logo-text {
+    color: #000000;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
 }
