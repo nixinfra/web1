@@ -55,24 +55,3 @@
         overflow-wrap: break-word;
     }
 }
-
-/* Sử dụng thuộc tính data-nav-id hoặc href của thẻ <a> */
-/* **Bạn cần kiểm tra mã nguồn trang của mình để có selector chính xác** */
-
-/* Selector phổ biến cho các mục menu trong theme Learn/Relearn */
-.td-sidebar a[href*="/notes/"] { 
-    /* Thêm đường viền dưới cho liên kết */
-    border-bottom: 1px solid white !important;
-    /* Thêm khoảng đệm để đường kẻ không dính vào chữ */
-    padding-bottom: 5px; 
-    /* Thêm khoảng cách sau đường kẻ */
-    margin-bottom: 10px; 
-}
-
-/* HOẶC nếu mục menu là thẻ <li> */
-/* Lưu ý: Đây chỉ là ví dụ. Bạn phải tìm selector chính xác. */
-.td-sidebar li:has(a[href*="/notes/"]) { 
-    border-bottom: 1px solid black;
-    padding-bottom: 5px; 
-    margin-bottom: 10px; 
-}

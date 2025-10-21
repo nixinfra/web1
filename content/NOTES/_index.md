@@ -1,7 +1,10 @@
----
++++
 title: "NOTES"
 description: Quickly look up some tips and cheat sheets related to the knowledge.
-weight: 30 # SHORT NOTES đứng cuối cùng
----
+weight: 30
+
+[menu.main]
+post = "<hr style=\"border: 0; height: 1px; background-color: white; margin: 15px 0;\">"
++++
 # CHEAT SHEET INTRODUCE
 Quick references and cheat sheets.
