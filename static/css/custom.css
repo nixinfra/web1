@@ -19,47 +19,7 @@
 
 .logo-text-custom span {
     font-size: 1.8em; /* Kích thước chữ (Có thể tăng lên 1.8em nếu muốn lớn hơn) */
-    font-weight: 600; /* Độ đậm */
+    font-weight: 700; /* Độ đậm */
     color: #1F3D51 !important; /* Màu cho chữ */
     letter-spacing: 1px;
-}
-
-.logo-text-custom i {
-    font-size: 1.5em; /* Icon lớn hơn text một chút để nổi bật */
-    color: #1F3D51 !important; /* Màu cho icon */
-}
-
-
-* -------------------------------------------------------------------
- * SỬA LỖI FONT CHỮ LỚN TRÊN MOBILE (BẮT BUỘC GHI ĐÈ)
- * -------------------------------------------------------------------
- */
-
-@media screen and (max-width: 768px) {
-    
-    /* Ghi đè Font size cho toàn bộ nội dung trong bài viết */
-    article.r-content,
-    article.r-content p,
-    article.r-content li {
-        font-size: 0.95em !important; 
-        line-height: 1.5 !important;
-    }
-
-    /* Ghi đè H1 */
-    article.r-content h1 {
-        font-size: 1.5em !important; /* Giảm mạnh xuống 1.5 lần font body */
-        line-height: 1.2 !important;
-    }
-
-    /* Ghi đè H2 */
-    article.r-content h2 {
-        font-size: 1.3em !important; /* Giảm mạnh xuống 1.3 lần font body */
-        line-height: 1.3 !important;
-    }
-
-    /* Ghi đè H3 */
-    article.r-content h3 {
-        font-size: 1.1em !important; /* Giảm mạnh xuống 1.1 lần font body */
-        line-height: 1.4 !important;
-    }
 }
