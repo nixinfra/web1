@@ -1,0 +1,23 @@
+/* Sử dụng Selector để nhắm vào thẻ <li> của NOTES */
+li[data-nav-url="/notes/index.html"] {
+    /* Đảm bảo nó là một block để border kéo dài hết chiều rộng */
+    display: block !important; 
+    
+    /* Thiết lập đường viền dưới màu đen */
+    border-bottom: 1px solid black !important;
+    
+    /* Thêm khoảng đệm bên trong mục NOTES để đường kẻ không dính sát chữ */
+    padding-bottom: 5px !important; 
+    
+    /* Thêm khoảng cách bên ngoài đường kẻ, để tách NOTES khỏi About */
+    margin-bottom: 10px !important; 
+}
+
+/* Tùy chọn: Đảm bảo đường viền không cắt ngang text */
+/* Theme Relearn thường có padding ở thẻ <a>, nên đôi khi cần border cho thẻ <a>. */
+/* Nếu border trên <li> không hoạt động, hãy thử nhắm vào thẻ <a> bên trong nó: */
+li[data-nav-url="/notes/index.html"] > a {
+    /* Quan trọng: Thêm padding-bottom cho <a> nếu bạn dùng border trên <li>, 
+       để đường kẻ nằm bên ngoài padding của <li> */
+    /* Nếu bạn dùng border trên <li>, thường không cần thay đổi <a>. */
+}
