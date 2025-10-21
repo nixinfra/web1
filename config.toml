@@ -10,8 +10,7 @@ theme = 'hugo-theme-relearn'
   themeVariant = "relearn-light"
   themeVariants = ["relearn-light", "relearn-dark", "relearn-auto"]
   alwaysopen = false
-  custom_css = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css", 
-                "css/custom.css"]
+  custom_css = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css", "css/custom.css"]
 
 [taxonomies]
   category = "categories"
