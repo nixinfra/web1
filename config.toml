@@ -11,6 +11,7 @@ theme = 'hugo-theme-relearn'
   themeVariants = ["relearn-light", "relearn-dark", "relearn-auto"]
   alwaysopen = false
   custom_css = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css", "css/custom.css"]
+  custom_js = ["js/separator.js"]
 
 [taxonomies]
   category = "categories"
@@ -37,42 +38,37 @@ theme = 'hugo-theme-relearn'
     url = "/quiz/"
     weight = 10
     identifier = "quiz"
+
   [[menu.main]]
     name = "LAB"
     url = "/lab/"
     weight = 20
     identifier = "lab"
+
   [[menu.main]]
     name = "NOTES"
     url = "/notes/"
     weight = 30
     identifier = "notes"
     
-  # MỤC PHÂN CÁCH (Dùng thuộc tính POST)
-  [[menu.main]]
-    # Mục ảo, không tên
-    name = "" 
-    url = "#" # Không cần URL hợp lệ
-    weight = 31 # Đặt ngay sau NOTES
-    identifier = "notes-separator"
-    # Dùng HTML và CSS inline cho đường phân cách
-    post = "<hr style='border: 0; height: 1px; background-color: white; margin: 15px 0;'>"
-    
   [[menu.main]]
     name = "About"
     url = "/about/"
     weight = 40
     identifier = "about"
+
   [[menu.main]]
     name = "Privacy Policy"
     url = "/privacy-policy/"
     weight = 50
     identifier = "privacy-policy"
+
   [[menu.main]]
     name = "Terms of Use"
     url = "/terms-of-use/"
     weight = 60
     identifier = "terms-of-use"    
+
   [[menu.main]]
     name = "Contact"
     url = "/contact/"
