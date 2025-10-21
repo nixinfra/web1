@@ -4,7 +4,6 @@ languageCode = "en"
 defaultContentLanguage = "en"
 title = "SysNetHub"
 theme = 'hugo-theme-relearn'
-images = ['images/logo.png]  # anh hien thi kem link site duoc hien thi tren search, share link
 
 [params]
   # Subtitle = "A Blog about network and system infrastructures"
