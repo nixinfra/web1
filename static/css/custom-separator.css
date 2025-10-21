@@ -1,31 +1,23 @@
-/* 1. Nhắm vào thẻ <a> bên trong thẻ <li> của NOTES */
-li[data-nav-url="/notes/index.html"] > a {
-    /* Quan trọng: Bật vị trí tương đối để định vị đường kẻ */
-    position: relative; 
-    /* Đảm bảo nó hiển thị đầy đủ */
-    display: block !important;
-    /* Thêm khoảng đệm dưới để đường kẻ không dính sát chữ */
-    padding-bottom: 10px; 
+/* Sử dụng bộ chọn mạnh hơn, nhắm vào thẻ <li> có data-nav-url */
+/* Lần này chúng ta đảm bảo đường viền nằm ở cuối thẻ <li> */
+li[data-nav-url="/notes/index.html"] {
+    /* Quan trọng: Tăng khoảng đệm dưới để tạo không gian cho đường viền */
+    padding-bottom: 15px !important; 
+    
+    /* Thiết lập đường viền dưới màu trắng */
+    border-bottom: 1px solid white !important; 
+    
+    /* Đảm bảo không có margin-bottom nào ghi đè lên khoảng cách của border */
+    margin-bottom: 0 !important;
 }
 
-/* 2. Tạo phần tử giả (pseudo-element) ::after để làm đường kẻ */
-li[data-nav-url="/notes/index.html"] > a::after {
-    content: ""; /* Bắt buộc phải có content */
-    display: block;
-    
-    /* Thiết lập vị trí: Nằm ở đáy của thẻ <a> */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    
-    /* Kích thước và Màu sắc */
-    width: 100%;
-    height: 1px;
-    background-color: white; /* Đổi màu sang trắng */
-}
-
-/* 3. Thêm margin cho mục About để tạo khoảng cách */
-/* Nhắm vào mục About (nằm ngay sau NOTES) để đẩy nó xuống một chút */
+/* Tùy chọn: Thêm khoảng cách sau đường kẻ (nếu cần) */
+/* Thêm margin-top cho mục About (nằm ngay sau NOTES) để đẩy nó xuống một chút */
 li[data-nav-url="/about/index.html"] {
     margin-top: 15px !important;
+}
+
+/* Khắc phục lỗi: Đảm bảo thẻ <a> không bị tràn qua border */
+li[data-nav-url="/notes/index.html"] > a {
+    margin-bottom: 0 !important;
 }
