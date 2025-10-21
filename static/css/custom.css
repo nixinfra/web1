@@ -1,6 +1,27 @@
-#R-logo .logo-text {
-    color: #FFFFFF;
-    font-size: 1.5em;
-    font-weight: bold;
+/* 1. Tùy chỉnh Container logo */
+#R-logo-custom {
+    padding: 10px 0; /* Khoảng cách */
+    display: block;
+    width: 100%;
     text-align: center;
+}
+
+/* 2. Định dạng cho đoạn text và icon */
+.logo-text-custom {
+    /* Đảm bảo toàn bộ dòng SysNetHub và Icon nằm trên cùng một dòng, căn giữa */
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;     /* Căn giữa theo chiều dọc */
+
+    /* Định dạng Text */
+    font-size: 1.2em; /* Kích thước chữ (Có thể tăng lên 1.8em nếu muốn lớn hơn) */
+    font-weight: 600; /* Độ đậm */
+    color: #FFFFFF !important; /* Màu trắng (Đổi mã màu tại đây) */
+    letter-spacing: 1px; /* Tăng độ dài text */
+}
+
+/* 3. Định dạng riêng cho Icon */
+.logo-text-custom i {
+    font-size: 1.5em; /* Icon lớn hơn text một chút để nổi bật */
+    color: #FFFFFF !important; /* Màu trắng (Đảm bảo icon cũng màu trắng hoặc màu khác biệt) */
 }
