@@ -1,5 +1,6 @@
 /* Giới hạn chiều cao tối đa cho ảnh logo trong sidebar */
 #R-logo img {
     max-height: 50px;
-    width: 100%; /* Đảm bảo tỉ lệ ảnh được giữ nguyên */
+    width: 100%; 
+    height: auto /* Đảm bảo tỉ lệ ảnh được giữ nguyên */
 }
