@@ -1,16 +1,16 @@
 # config.toml
-baseURL = "https://nixinfra.com/"
-languageCode = "en-us"
+baseURL = 'https://nixinfra.com/'
+languageCode = "en"
 defaultContentLanguage = "en"
 title = "SysNetHub"
 theme = 'hugo-theme-relearn'
+images = ['images/logo.png]  # anh hien thi kem link site duoc hien thi tren search, share link
 
 [params]
   # Subtitle = "A Blog about network and system infrastructures"
   themeVariant = "relearn-light"
   themeVariants = ["relearn-light", "relearn-dark", "relearn-auto"]
   alwaysopen = false
-  logo = "/images/logo.png"
   custom_css = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"]
 
 [taxonomies]
