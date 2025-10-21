@@ -1,13 +1,20 @@
-.logo-text-custom {
-    /* Đảm bảo toàn bộ dòng SysNetHub và Icon nằm trên cùng một dòng, căn giữa */
+/* 1. Quy tắc cho container logo (thẻ <a>) */
+#R-logo {
+    /* Đảm bảo toàn bộ logo (text) được căn giữa trong thanh sidebar */
     display: flex;
     justify-content: center; /* Căn giữa theo chiều ngang */
     align-items: center;     /* Căn giữa theo chiều dọc */
-
-    /* Định dạng Text */
-    font-size: 1.8em; /* Kích thước chữ (Có thể tăng lên 1.8em nếu muốn lớn hơn) */
-    font-weight: 600; /* Độ đậm */
-    color: #1F3D51 !important; /* Màu trắng (Đổi mã màu tại đây) */
-    letter-spacing: 1px; /* Tăng độ dài text */
+    width: 100%;
 }
 
+/* 2. Quy tắc cho đoạn TEXT thực tế (thẻ <span>) */
+#R-logo .logo-text {
+    /* *** ĐỊNH DẠNG TEXT TẠI ĐÂY *** */
+    font-size: 1.8em !important; /* Kích thước chữ (Dùng !important để ghi đè theme) */
+    font-weight: 600; /* Độ đậm */
+    color: #1F3D51 !important; /* Màu xanh đậm (Đổi mã màu tại đây) */
+    letter-spacing: 1px; /* Tăng độ dài text */
+
+    /* Bỏ các thuộc tính không cần thiết nếu text chỉ là <span> */
+    /* display: flex; và align-items: center; không cần cho span */
+}
