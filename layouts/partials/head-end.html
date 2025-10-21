@@ -1,0 +1,8 @@
+<!-- 
+  Đây là file partial được theme Relearn gọi ở cuối thẻ <head>.
+  Nó đảm bảo custom.css được tải SAU file CSS chính của theme, 
+  giúp các quy tắc tùy chỉnh của bạn (như @media query) hoạt động.
+-->
+{{ with resources.Get "css/custom.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ .RelPermalink }}">
+{{ end }}
