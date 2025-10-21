@@ -4,7 +4,7 @@ li[data-nav-url="/notes/index.html"] {
     display: block !important; 
     
     /* Thiết lập đường viền dưới màu đen */
-    border-bottom: 1px solid black !important;
+    border-bottom: 1px solid white !important;
     
     /* Thêm khoảng đệm bên trong mục NOTES để đường kẻ không dính sát chữ */
     padding-bottom: 5px !important; 
