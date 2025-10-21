@@ -1,5 +1,17 @@
-<link rel="shortcut icon" href="{{ "images/favicon.ico" | relURL }}">
+<!-- Favicon cho trình duyệt (đa kích thước trong .ico) -->
+<link rel="shortcut icon" href="{{ "images/favicon.ico" | relURL }}" />
 
-<link rel="icon" type="image/png" sizes="96x96" href="{{ "images/favicon-96x96.png" | relURL }}">
+<!-- Favicon chuẩn (png 96x96 - Thường được dùng cho Google Search SERP) -->
+<link rel="icon" type="image/png" sizes="96x96" href="{{ "images/favicon-96x96.png" | relURL }}" />
 
-<link rel="apple-touch-icon" sizes="180x180" href="{{ "images/apple-touch-icon.png" | relURL }}">
+<!-- Favicon SVG (hiển thị chất lượng cao, không cần resize) -->
+<link rel="icon" type="image/svg+xml" href="{{ "images/favicon.svg" | relURL }}" />
+
+<!-- Apple Touch Icon (Khi người dùng lưu trang ra màn hình chính trên iPhone/iPad) -->
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "images/apple-touch-icon.png" | relURL }}" />
+
+<!-- Web App Manifest (Cung cấp thông tin khi cài đặt dưới dạng app) -->
+<link rel="manifest" href="{{ "images/site.webmanifest" | relURL }}" />
+
+<!-- Tên của Web App/Ứng dụng khi được thêm vào màn hình chính -->
+<meta name="apple-mobile-web-app-title" content="SysNetHub" />
