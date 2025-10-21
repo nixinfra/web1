@@ -4,7 +4,8 @@ description: "Quickly look up some tips and cheat sheets related to the knowledg
 weight: 30
 menu:
   main:
-    post: '<hr style="border: 0; height: 1px; background-color: white; margin: 15px 0;">'
+    identifier: notes
+    hidden: true
 ---
 
 # CHEAT SHEET INTRODUCE
