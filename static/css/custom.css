@@ -1,25 +1,20 @@
-/* -------------------------------------------------------------------
- * TÙY CHỈNH CHO LOGO/TÊN WEBSITE (Giữ lại các tùy chỉnh trước)
- * -------------------------------------------------------------------
- */
+/* 1. Quy tắc cho container logo (thẻ <a>) */
 #R-logo {
-    /* Đảm bảo toàn bộ nội dung Logo nằm ở giữa */
+    /* Đảm bảo toàn bộ logo (text) được căn giữa trong thanh sidebar */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;     /* Căn giữa theo chiều dọc */
+    width: 100%;
 }
 
-/* Định dạng riêng cho Text và Icon bên trong logo */
-.logo-text-custom {
-    display: flex; /* Dùng flex để canh chỉnh icon và text */
-    justify-content: center; 
-    align-items: center;
-}
+/* 2. Quy tắc cho đoạn TEXT thực tế (thẻ <span>) */
+#R-logo .logo-text {
+    /* *** ĐỊNH DẠNG TEXT TẠI ĐÂY *** */
+    font-size: 1.8em !important; /* Kích thước chữ (Dùng !important để ghi đè theme) */
+    font-weight: 650; /* Độ đậm */
+    color: #53051D !important; /* Màu xanh đậm (Đổi mã màu tại đây) */
+    letter-spacing: 1px; /* Tăng độ dài text */
 
-.logo-text-custom span {
-    font-size: 1.8em; /* Kích thước chữ (Có thể tăng lên 1.8em nếu muốn lớn hơn) */
-    font-weight: 700; /* Độ đậm */
-    color: #1F3D51 !important; /* Màu cho chữ */
-    letter-spacing: 1px;
+    /* Bỏ các thuộc tính không cần thiết nếu text chỉ là <span> */
+    /* display: flex; và align-items: center; không cần cho span */
 }
