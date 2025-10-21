@@ -18,3 +18,38 @@
     /* Bỏ các thuộc tính không cần thiết nếu text chỉ là <span> */
     /* display: flex; và align-items: center; không cần cho span */
 }
+
+
+/*
+ * 1. GIẢM KÍCH THƯỚC FONT CHUNG CHO BÀI VIẾT TRÊN ĐIỆN THOẠI
+ * (Áp dụng khi độ rộng màn hình nhỏ hơn 768px - Kích thước điện thoại/tablet nhỏ)
+ */
+@media screen and (max-width: 768px) {
+
+    /* Giảm kích thước font mặc định của nội dung bài viết (body) */
+    .r-content {
+        font-size: 1.0em !important; /* Giảm nhẹ font mặc định. Relearn thường dùng 1.0625rem */
+        line-height: 1.5; /* Giữ khoảng cách dòng dễ đọc */
+    }
+
+    /* 2. GIẢM KÍCH THƯỚC CHO CÁC THẺ TIÊU ĐỀ (H tags) */
+
+    /* Thẻ H1 (Thường là tiêu đề lớn nhất, dễ bị xuống dòng nhất) */
+    .r-content h1 {
+        font-size: 1.8em !important; /* Giảm mạnh, ví dụ: từ 2.5em xuống 1.8em */
+        line-height: 1.2;
+    }
+
+    /* Thẻ H2 */
+    .r-content h2 {
+        font-size: 1.5em !important; /* Giảm từ 2.0em xuống 1.5em */
+        line-height: 1.3;
+    }
+
+    /* Thẻ H3 */
+    .r-content h3 {
+        font-size: 1.3em !important; /* Giảm từ 1.5em xuống 1.3em */
+    }
+
+    /* ...Nếu cần, bạn có thể thêm H4, H5... */
+}
