@@ -60,3 +60,9 @@
 .sidebar .nav-list li a .fa-fw {
   margin-right: 10px !important;
 }
+
+
+/* An nut Home mac dinh tren menu trai */
+#R-homelinks {
+  display: none !important;
+}
