@@ -57,6 +57,6 @@
 }
 
 /* Tang giam space giua icon va text trong menu sidebar */
-.sidebar .fa-fw {
+.sidebar .nav-list > a > .fa-fw {
   margin-right: 10px !important;
 }
