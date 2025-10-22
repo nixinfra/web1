@@ -1,5 +1,6 @@
 ---
 title: "Cisco"
-weight: 30 # Cisco đứng cuối trong menu con LAB
+menuPre: '<i class="fa-fw fas fa-network-wired"></i>'
+weight: 30
 ---
 Cisco Networking Labs.

@@ -1,5 +1,6 @@
 ---
 title: "Windows"
-weight: 20 # Windows đứng thứ hai trong menu con LAB
+menuPre: '<i class="fa-fw fab fa-windows"></i>'
+weight: 20
 ---
 Windows Server and Desktop Labs.

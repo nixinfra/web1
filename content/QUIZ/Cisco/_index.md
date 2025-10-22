@@ -1,5 +1,6 @@
 ---
 title: "Cisco"
-weight: 20 # 
+menuPre: '<i class="fa-fw fas fa-network-wired"></i>'
+weight: 20 
 ---
 Cisco Networking Quizzes.

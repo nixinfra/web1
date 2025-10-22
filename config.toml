@@ -5,6 +5,7 @@ defaultContentLanguage = "en"
 title = "SysNetHub"
 theme = 'hugo-theme-relearn'
 
+
 [params]
   # Subtitle = "A Blog about network and system infrastructures"
   [[params.themeVariant]]
@@ -13,11 +14,26 @@ theme = 'hugo-theme-relearn'
   [[params.themeVariant]]
     identifier = 'monokai'
     name = 'Dark Mode'
+
   alwaysopen = false
-  custom_css = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css", "css/custom.css"]
+  custom_css = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css", 
+                "css/custom.css"]
   custom_js = ["js/separator.js"]
-  disableLandingPageButton = true
   showVisitedLinks = true
+
+  [[params.sidebarmenus]]
+    type = 'custom'
+    identifier = 'more-title'
+    title = 'MORE'
+    main = true
+    disableTitle = true
+    elements = []
+  [[params.sidebarmenus]]
+    type = 'menu'
+    identifier = 'utilities'
+    main = false
+    disableTitle = true
+
 
 [taxonomies]
   category = "categories"

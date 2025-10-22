@@ -1,6 +1,6 @@
 ---
 title: "QUIZ"
-menuPre: '<i class="fa-fw fas fa-question-circle"></i>'
+menuPre: '<i class="fa-fw fas fa-file-signature"></i>'
 description: Take quick quizzes to review or refresh related knowledge.
 weight: 10
 ---

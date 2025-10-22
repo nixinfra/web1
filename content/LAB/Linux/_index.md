@@ -1,5 +1,6 @@
 ---
 title: "Linux"
-weight: 10 # Linux đứng đầu trong menu con LAB
+menuPre: '<i class="fa-fw fab fa-linux"></i>'
+weight: 10
 ---
 Hands-on Linux Labs.
