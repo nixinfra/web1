@@ -20,8 +20,8 @@
 }
 
 
+/* 2. Responsive cho mobile hien thi tot noi dung */
 @media screen and (max-width: 768px) {
-    /* Ghi đè biến CSS gốc của theme (giúp giảm font chữ chung) */
     :root, body {
         /* Giảm font size gốc xuống 0.85rem (hoặc 14px) */
         --INTERNAL-MAIN-FONT-SIZE: 0.85rem !important; 
@@ -57,6 +57,5 @@
 }
 
 
-.sidebar .fa-fw {
-  margin-right: 6px !important;
-}
+/* 3. Tang Giam Khoang cach giua icon va text trong menu sidebar */
+
