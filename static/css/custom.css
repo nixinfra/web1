@@ -57,8 +57,8 @@
 }
 
 /* Tang giam space giua icon va text trong menu sidebar */
-.sidebar .nav-list li a .fa-fw {
-  margin-right: 10px !important;
+#R-sidebar ul.collapsible-menu li a i {
+  margin-right: 8px !important;
 }
 
 
