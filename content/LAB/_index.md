@@ -1,5 +1,6 @@
 ---
 title: "LAB"
+menuPre: '<i class="fa-fw fas fa-flask"></i>'
 weight: 20 # LAB đứng thứ hai
 ---
 # LAB INTRODUCE

@@ -9,13 +9,15 @@ theme = 'hugo-theme-relearn'
   # Subtitle = "A Blog about network and system infrastructures"
   [[params.themeVariant]]
     identifier = 'github'
-    name = 'Light Mode (Github)'
+    name = 'Light Mode'
   [[params.themeVariant]]
     identifier = 'monokai'
-    name = 'Dark Mode (Monokai)'
+    name = 'Dark Mode'
   alwaysopen = false
   custom_css = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css", "css/custom.css"]
   custom_js = ["js/separator.js"]
+  disableLandingPageButton = true
+  showVisitedLinks = true
 
 [taxonomies]
   category = "categories"
@@ -35,47 +37,3 @@ theme = 'hugo-theme-relearn'
       unsafe = true              # dung de render HTML inline
 
 
-
-# Định nghĩa menu chính (nếu chưa có)
-[menu]
-  [[menu.main]]
-    name = "QUIZ"
-    url = "/quiz/"
-    weight = 10
-    identifier = "quiz"
-
-  [[menu.main]]
-    name = "LAB"
-    url = "/lab/"
-    weight = 20
-    identifier = "lab"
-
-  [[menu.main]]
-    name = "NOTES"
-    url = "/notes/"
-    weight = 30
-    identifier = "notes"
-    
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 40
-    identifier = "about"
-
-  [[menu.main]]
-    name = "Privacy Policy"
-    url = "/privacy-policy/"
-    weight = 50
-    identifier = "privacy-policy"
-
-  [[menu.main]]
-    name = "Terms of Use"
-    url = "/terms-of-use/"
-    weight = 60
-    identifier = "terms-of-use"    
-
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 70
-    identifier = "contact"
