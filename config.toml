@@ -24,6 +24,7 @@ theme = 'hugo-theme-relearn'
   [[params.sidebarmenus]]
     type = 'menu'
     identifier = 'main'
+    ordersectionsby = 'weight'
     main = false
     disableTitle = true
 
@@ -38,6 +39,7 @@ theme = 'hugo-theme-relearn'
   [[params.sidebarmenus]]
     type = 'menu'
     identifier = 'utilities'
+    ordersectionsby = 'weight'
     main = false
     disableTitle = true
 
