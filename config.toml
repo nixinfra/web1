@@ -18,31 +18,6 @@ theme = 'hugo-theme-relearn'
   alwaysopen = false
   custom_css = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css", 
                 "css/custom.css"]
-  landingPageName = '<i class="fa-fw fas fa-home"></i> Home'
-  showVisitedLinks = true
-
-  [[params.sidebarmenus]]
-    type = 'menu'
-    identifier = 'main'
-    ordersectionsby = 'weight'
-    main = false
-    disableTitle = true
-
-  [[params.sidebarmenus]]
-    type = 'custom'
-    identifier = 'more-title'
-    title = 'MORE'
-    main = true
-    disableTitle = true
-    elements = []
-
-  [[params.sidebarmenus]]
-    type = 'menu'
-    identifier = 'utilities'
-    ordersectionsby = 'weight'
-    main = false
-    disableTitle = true
-
 
 [taxonomies]
   category = "categories"
@@ -60,5 +35,3 @@ theme = 'hugo-theme-relearn'
   [markup.goldmark]
     [markup.goldmark.render]    
       unsafe = true              # dung de render HTML inline
-
-

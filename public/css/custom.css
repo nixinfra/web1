@@ -1,0 +1,57 @@
+/* 1. Quy tắc cho container logo (thẻ <a>) */
+#R-logo {
+    /* Đảm bảo toàn bộ logo (text) được căn giữa trong thanh sidebar */
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;     /* Căn giữa theo chiều dọc */
+    width: 100%;
+}
+
+/* 2. Quy tắc cho đoạn TEXT thực tế (thẻ <span>) */
+#R-logo .logo-text {
+    /* *** ĐỊNH DẠNG TEXT TẠI ĐÂY *** */
+    font-size: 1.8em !important; /* Kích thước chữ (Dùng !important để ghi đè theme) */
+    font-weight: 650; /* Độ đậm */
+    color: #53051D !important; /* Màu xanh đậm (Đổi mã màu tại đây) */
+    letter-spacing: 1px; /* Tăng độ dài text */
+
+    /* Bỏ các thuộc tính không cần thiết nếu text chỉ là <span> */
+    /* display: flex; và align-items: center; không cần cho span */
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Ghi đè biến CSS gốc của theme (giúp giảm font chữ chung) */
+    :root, body {
+        /* Giảm font size gốc xuống 0.85rem (hoặc 14px) */
+        --INTERNAL-MAIN-FONT-SIZE: 0.85rem !important; 
+        font-size: 14px !important; /* Thêm fallback cho body */
+    }
+    
+    /* Nhắm mục tiêu trực tiếp vào TẤT CẢ các thẻ H1, H2, H3 trong toàn bộ DOM */
+    h1, .content h1 {
+        font-size: 1.8em !important; /* Vẫn lớn nhất */
+        line-height: 1.2;
+    }
+    
+    h2, .content h2 { 
+        font-size: 1.5em !important; /* Vẫn đặt là 1.5em */
+        line-height: 1.3; 
+    }
+    
+    h3, .content h3 { 
+        font-size: 1.2em !important; /* Bé hơn H2 để phân cấp */
+        line-height: 1.4;
+    }
+    
+    /* Đảm bảo nội dung chữ thường cũng nhỏ lại */
+    .r-content p, .r-content li {
+        font-size: 1em !important; 
+    }
+    
+    /* Đảm bảo khung nội dung không bị tràn */
+    .r-content {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+}

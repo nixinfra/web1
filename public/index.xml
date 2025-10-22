@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HELLO :: SysNetHub</title>
+    <link>http://localhost:1313/index.html</link>
+    <description>A comprehensive resource for Network, System, and Infrastructure studies.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>QUIZ</title>
+      <link>http://localhost:1313/quiz/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/quiz/index.html</guid>
+      <description>Take quick quizzes to review or refresh related knowledge.</description>
+    </item>
+    <item>
+      <title>LAB</title>
+      <link>http://localhost:1313/lab/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/lab/index.html</guid>
+      <description>LAB INTRODUCE Practical labs and tutorials on various systems. Choose a system from the sub-menus on the left.</description>
+    </item>
+    <item>
+      <title>Privacy Policy</title>
+      <link>http://localhost:1313/privacy-policy/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/privacy-policy/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NOTES</title>
+      <link>http://localhost:1313/notes/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/index.html</guid>
+      <description>Quickly look up some tips and cheat sheets related to the knowledge.</description>
+    </item>
+    <item>
+      <title>Terms of Use</title>
+      <link>http://localhost:1313/terms-of-use/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/terms-of-use/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/index.html</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
