@@ -22,12 +22,19 @@ theme = 'hugo-theme-relearn'
   showVisitedLinks = true
 
   [[params.sidebarmenus]]
+    type = 'menu'
+    identifier = 'main'
+    main = false
+    disableTitle = true
+
+  [[params.sidebarmenus]]
     type = 'custom'
     identifier = 'more-title'
     title = 'MORE'
     main = true
     disableTitle = true
     elements = []
+
   [[params.sidebarmenus]]
     type = 'menu'
     identifier = 'utilities'
