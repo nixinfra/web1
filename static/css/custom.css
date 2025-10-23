@@ -66,3 +66,9 @@
 #R-homelinks {
   display: none !important;
 }
+
+
+/* Tang giam size cua o mau xanh tren menu sidebar */
+#R-header-wrapper {
+  padding: 5px 16px;
+}
