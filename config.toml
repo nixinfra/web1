@@ -19,6 +19,16 @@ theme = 'hugo-theme-relearn'
   custom_css = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css", 
                 "css/custom.css"]
 
+  [[params.linkEffects]]
+    # chi mo mot tab moi cho link dan, cu phap: link_source 
+    target = '_blank'
+    # mo tab moi va download, cu phap: link?download
+    download = true
+    # mo tab moi (danh cho link quan trong duoc to mau xanh la), cu phap: link?ref-link 
+    ref-link = true
+    # mo tab moi (danh cho link canh bao duoc to mau do), cu phap: link?alert-link
+    alert-link = true
+
 [taxonomies]
   category = "categories"
   tag = "tags"
