@@ -25,6 +25,14 @@ theme = 'hugo-theme-relearn'
     # mo tab moi va download, cu phap: link?download
     download = true
 
+  [params.imageEffects]
+    # quy trinh upload anh: crop 16:9 -> resize max width 1000px -> nen -> upload
+    # cu phap markdown chen anh:  ![text-anh](images/ten-anh)
+    lazy = true
+    lightbox = true
+    border = true
+    
+
 [taxonomies]
   category = "categories"
   tag = "tags"
