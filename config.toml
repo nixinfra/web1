@@ -20,14 +20,10 @@ theme = 'hugo-theme-relearn'
                 "css/custom.css"]
 
   [params.linkEffects]
-    # chi mo mot tab moi cho link dan, cu phap: link_source 
+    # mo mot tab moi cho link dan, cu phap: link?ref-link 
     target = '_blank'
     # mo tab moi va download, cu phap: link?download
     download = true
-    # mo tab moi (danh cho link quan trong duoc to mau xanh la), cu phap: link?ref-link 
-    ref-link = true
-    # mo tab moi (danh cho link canh bao duoc to mau do), cu phap: link?alert-link
-    alert-link = true
 
 [taxonomies]
   category = "categories"
