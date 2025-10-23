@@ -22,8 +22,6 @@ theme = 'hugo-theme-relearn'
   [params.linkEffects]
     # mo mot tab moi cho link dan, cu phap: link?ref-link 
     target = '_blank'
-    # mo tab moi va download, cu phap: link?download
-    download = true
 
   [params.imageEffects]
     # quy trinh upload anh: crop 16:9 -> resize max width 1000px -> nen -> upload
