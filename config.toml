@@ -19,10 +19,6 @@ theme = 'hugo-theme-relearn'
   custom_css = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css", 
                 "css/custom.css"]
 
-  [params.linkEffects]
-    # mo mot tab moi cho link dan, cu phap: link?ref-link 
-    target = '_blank'
-
   [params.imageEffects]
     # quy trinh upload anh: crop 16:9 -> resize max width 1000px -> nen -> upload
     # cu phap markdown chen anh:  ![text-anh](images/ten-anh)
