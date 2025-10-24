@@ -18,7 +18,6 @@ theme = 'hugo-theme-relearn'
   alwaysopen = false
   custom_css = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css", 
                 "css/custom.css"]
-  menu = "sidebar"
 
   [params.imageEffects]
     # quy trinh upload anh: crop 16:9 -> resize max width 1000px -> nen -> upload
@@ -27,14 +26,6 @@ theme = 'hugo-theme-relearn'
     lightbox = true
     border = true
 
-[menu]
-  [[menu.sidebar]]
-    name = "MORE"
-    identifier = "more"
-    url = "#"
-    weight = 35
-    class = "menu-separator"
-    
 
 [taxonomies]
   category = 'categories'
