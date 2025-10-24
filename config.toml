@@ -28,7 +28,7 @@ theme = 'hugo-theme-relearn'
     border = true
 
 [menu]
-  [[menu.main]]
+  [[menu.sidebar]]
     name = "MORE"
     identifier = "more"
     url = "#"
