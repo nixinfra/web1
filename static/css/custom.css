@@ -72,3 +72,14 @@
 #R-header-wrapper {
   padding: 2px 16px;
 }
+
+
+/* Tao Nut MORE tren sidebar nhung khong phai la nut menu */
+.menu-separator a {
+  pointer-events: none;   /* không click được */
+  cursor: default;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb;
+}
+

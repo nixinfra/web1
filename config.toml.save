@@ -25,6 +25,7 @@ theme = 'hugo-theme-relearn'
     lazy = true
     lightbox = true
     border = true
+    
 
 [menu]
   [[menu.main]]
@@ -33,7 +34,7 @@ theme = 'hugo-theme-relearn'
     url = ""
     weight = 100
     class = "menu-separator"
-    
+
 
 [taxonomies]
   category = 'categories'
