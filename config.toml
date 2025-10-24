@@ -31,7 +31,7 @@ theme = 'hugo-theme-relearn'
   [[menu.main]]
     name = "MORE"
     identifier = "more"
-    url = ""
+    url = "#"
     weight = 35
     class = "menu-separator"
     
