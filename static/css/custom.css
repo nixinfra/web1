@@ -73,10 +73,3 @@
   padding: 2px 16px;
 }
 
-
-/* Tao Nut MORE tren sidebar nhung khong phai la nut menu */
-.menu-separator a {
-  pointer-events: none;
-  color: #aaa;
-}
-

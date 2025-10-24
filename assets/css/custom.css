@@ -1,0 +1,9 @@
+/* Tao Nut MORE tren sidebar nhung khong phai la nut menu */
+/* Turn "MORE" into plain text label */
+.menu-separator > a {
+  pointer-events: none !important;
+  color: #aaa !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: default !important;
+}
