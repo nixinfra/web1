@@ -1,0 +1,88 @@
+<aside class="sidebar" id="sidebar">
+
+  {{- /* ── LOGO ── */}}
+  <a class="sidebar-logo" href="{{ .Site.BaseURL }}">
+    <div class="logo-icon">
+      <svg viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+        <rect width="42" height="42" rx="8" fill="#5abf1e"/>
+        <g fill="none" stroke="#fff" stroke-width="1.3" stroke-linejoin="round">
+          <path d="M21 6 L22.5 10 L25.5 8.5 L26 12 L29.5 12 L28.5 15.5 L32 17 L29.5 20 L32 23 L28.5 24.5 L29.5 28 L26 28 L25.5 31.5 L22.5 30 L21 34 L19.5 30 L16.5 31.5 L16 28 L12.5 28 L13.5 24.5 L10 23 L12.5 20 L10 17 L13.5 15.5 L12.5 12 L16 12 L16.5 8.5 L19.5 10 Z"/>
+          <circle cx="21" cy="20" r="5.5"/>
+        </g>
+        <line x1="21" y1="14.5" x2="21" y2="11" stroke="#1e2125" stroke-width="1.5"/>
+        <line x1="26.5" y1="20" x2="30" y2="20" stroke="#1e2125" stroke-width="1.5"/>
+        <line x1="15.5" y1="20" x2="12" y2="20" stroke="#1e2125" stroke-width="1.5"/>
+        <circle cx="21" cy="10.5" r="1.2" fill="#1e2125"/>
+        <circle cx="30.5" cy="20" r="1.2" fill="#1e2125"/>
+        <circle cx="11.5" cy="20" r="1.2" fill="#1e2125"/>
+      </svg>
+    </div>
+    <div class="logo-text">
+      <span class="logo-name">{{ .Site.Title }}</span>
+      <span class="logo-tagline">{{ .Site.Params.tagline | default "Net/Sys is Fun!" }}</span>
+    </div>
+  </a>
+
+  {{- /* ── SEARCH ── */}}
+  <div class="sidebar-search">
+    <div class="sidebar-search-wrap">
+      <span class="search-prefix">~/</span>
+      <input type="text" id="searchInput" placeholder="Search..." autocomplete="off"
+             oninput="siteSearch(this.value)">
+      <button id="clearSearch" onclick="clearSearch()" aria-label="Clear">✕</button>
+    </div>
+    <div id="searchResults" class="search-results"></div>
+  </div>
+
+  {{- /* ── NAV ── */}}
+  <nav class="sidebar-nav">
+
+    {{- /* Main menu sections from config */}}
+    {{ range .Site.Menus.main }}
+    <a class="nav-link{{ if $.IsMenuCurrent "main" . }} active{{ end }}"
+       href="{{ .URL }}">
+      {{ if .Pre }}<span class="nav-icon">{{ .Pre | safeHTML }}</span>{{ end }}
+      {{ .Name }}
+    </a>
+    {{ end }}
+
+    {{- /* Fallback if no menus configured */}}
+    {{ if not .Site.Menus.main }}
+    <div class="nav-section-label">// Danh mục</div>
+
+    <a class="nav-link{{ if .IsHome }} active{{ end }}" href="{{ .Site.BaseURL }}">
+      <span class="nav-icon">{{ partial "icons/grid.html" . }}</span>
+      Tất cả bài viết
+    </a>
+
+    {{ range .Site.Taxonomies.tags }}
+    {{ with .Page }}
+    <a class="nav-link{{ if $.HasMenuCurrent "main" . }} active{{ end }}" href="{{ .Permalink }}">
+      <span class="nav-icon">{{ partial "icons/tag.html" . }}</span>
+      {{ .Title | title }}
+    </a>
+    {{ end }}
+    {{ end }}
+
+    <div class="nav-section-label" style="margin-top:.75rem">// Trang</div>
+    {{ range where .Site.Pages "Type" "page" }}
+    {{ if and (ne .Title "") (not .IsHome) }}
+    <a class="nav-link" href="{{ .Permalink }}">
+      <span class="nav-icon">{{ partial "icons/page.html" . }}</span>
+      {{ .Title }}
+    </a>
+    {{ end }}
+    {{ end }}
+    {{ end }}
+
+  </nav>
+
+  <div class="sidebar-footer">
+    © {{ now.Format "2006" }} {{ .Site.Title }}<br>
+    <a href="{{ .Site.BaseURL }}" target="_blank">nixinfra.com</a> · Learning Net/Sys is Fun!
+  </div>
+
+</aside>
+
+<!-- Mobile overlay -->
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>

@@ -1,0 +1,31 @@
+<div class="topbar">
+  <div class="topbar-left">
+    <!-- Mobile hamburger -->
+    <button class="hamburger" onclick="toggleSidebar()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Breadcrumb -->
+    <div class="topbar-breadcrumb">
+      <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+      {{ if not .IsHome }}
+        <span class="breadcrumb-sep">/</span>
+        {{ if .Parent }}
+          {{ if not .Parent.IsHome }}
+            <a href="{{ .Parent.Permalink }}">{{ .Parent.Title }}</a>
+            <span class="breadcrumb-sep">/</span>
+          {{ end }}
+        {{ end }}
+        <span>{{ .Title }}</span>
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="topbar-right">
+    {{ if .IsHome }}
+    <span class="topbar-count" id="postCount">
+      {{ len (where .Site.RegularPages "Type" "posts") }} bài viết
+    </span>
+    {{ end }}
+  </div>
+</div>

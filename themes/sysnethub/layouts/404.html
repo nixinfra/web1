@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="article-wrap" style="text-align:center;padding:6rem 2rem;">
+  <div style="font-family:var(--mono);font-size:0.75rem;color:var(--green);letter-spacing:.08em;text-transform:uppercase;margin-bottom:1rem">
+    // error 404
+  </div>
+  <h1 style="font-family:var(--serif);font-size:2.5rem;margin-bottom:1rem">Trang không tồn tại</h1>
+  <p style="color:var(--ink3);font-family:var(--mono);font-size:0.85rem;margin-bottom:2rem">
+    $ find / -name "{{ .Title }}" 2>/dev/null<br>
+    <span style="opacity:.5">find: no results found</span>
+  </p>
+  <a href="{{ .Site.BaseURL }}" class="submit-btn" style="display:inline-block;text-decoration:none">← cd ~</a>
+</div>
+{{ end }}

@@ -1,0 +1,13 @@
+name = "SysNetHub"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "A minimal dark-sidebar theme for SysNetHub — Net/Sys is Fun!"
+homepage = "https://nixinfra.com"
+min_version = "0.112.0"
+
+[author]
+  name = "SysNetHub"
+  homepage = "https://nixinfra.com"
+
+[features]
+  min_version = "0.112.0"

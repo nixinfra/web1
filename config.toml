@@ -3,7 +3,7 @@ baseURL = 'https://nixinfra.com/'
 languageCode = "en"
 defaultContentLanguage = "en"
 title = "SysNetHub"
-theme = 'hugo-theme-relearn'
+theme = 'sysnethub'
 
 
 [params]

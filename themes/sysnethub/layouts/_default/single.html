@@ -1,0 +1,96 @@
+{{ define "main" }}
+
+<article class="article-wrap">
+
+  <a class="back-btn" href="{{ .Parent.Permalink | default .Site.BaseURL }}">← cd ..</a>
+
+  <!-- Article Header -->
+  <div class="article-label">
+    {{ range .Params.tags }}<span>{{ . }}</span>{{ if not (eq . (index $.Params.tags (sub (len $.Params.tags) 1))) }} · {{ end }}{{ end }}
+  </div>
+
+  <h1 class="article-title">{{ .Title }}</h1>
+
+  <div class="article-meta">
+    <span>{{ .Params.author | default .Site.Params.author }}</span>
+    <span>{{ .Date.Format "02 tháng 01, 2006" }}</span>
+    <span>{{ .ReadingTime }} phút đọc</span>
+    {{ with .Params.tags }}
+    <span>{{ len . }} tag{{ if gt (len .) 1 }}s{{ end }}</span>
+    {{ end }}
+  </div>
+
+  <!-- Cover image or code snippet -->
+  <div class="article-cover">
+    {{ if .Params.cover }}
+      <img src="{{ .Params.cover }}" alt="{{ .Title }}" style="width:100%;height:100%;object-fit:cover;border-radius:4px;">
+    {{ else }}
+      <div class="article-cover-code">
+        <pre>{{ .Params.snippet | default (printf "// %s\n// %s" .Title (.Date.Format "2006")) }}</pre>
+      </div>
+    {{ end }}
+  </div>
+
+  <!-- Body -->
+  <div class="article-body">
+    {{ .Content }}
+  </div>
+
+  <!-- Tags -->
+  {{ with .Params.tags }}
+  <div class="article-tags">
+    {{ range . }}
+    <a class="article-tag" href="{{ "/tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <!-- Prev / Next -->
+  <div class="post-nav">
+    {{ with .PrevInSection }}
+    <a class="post-nav-link prev" href="{{ .Permalink }}">
+      <span class="post-nav-label">← Bài trước</span>
+      <span class="post-nav-title">{{ .Title }}</span>
+    </a>
+    {{ end }}
+    {{ with .NextInSection }}
+    <a class="post-nav-link next" href="{{ .Permalink }}">
+      <span class="post-nav-label">Bài tiếp →</span>
+      <span class="post-nav-title">{{ .Title }}</span>
+    </a>
+    {{ end }}
+  </div>
+
+</article>
+
+<!-- Comments -->
+<div class="comments-section">
+  <div class="comments-title">// Bình luận</div>
+
+  {{ if .Site.Params.disqus }}
+    <div id="disqus_thread"></div>
+    <script>
+      var disqus_config = function() {
+        this.page.url = "{{ .Permalink }}";
+        this.page.identifier = "{{ .File.UniqueID }}";
+      };
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://{{ $.Site.Params.disqus }}.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+  {{ else }}
+    <!-- Built-in simple comments (stored in sessionStorage, demo only) -->
+    <div class="comment-form">
+      <input type="text" id="commentName" placeholder="Tên của bạn">
+      <textarea id="commentText" placeholder="Chia sẻ suy nghĩ của bạn..."></textarea>
+      <button class="submit-btn" onclick="submitComment('{{ .File.UniqueID }}')">Gửi bình luận</button>
+    </div>
+    <div id="commentsList"></div>
+    <script>renderComments('{{ .File.UniqueID }}');</script>
+  {{ end }}
+</div>
+
+{{ end }}

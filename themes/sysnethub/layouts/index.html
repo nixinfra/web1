@@ -1,0 +1,73 @@
+{{ define "main" }}
+
+{{- $posts := where .Site.RegularPages "Type" "posts" -}}
+
+<!-- HERO — latest post -->
+{{ with index $posts 0 }}
+<div class="hero">
+  <a class="hero-card" href="{{ .Permalink }}">
+    <div class="hero-content">
+      <div>
+        <div class="hero-label">// Bài mới nhất</div>
+        <h1 class="hero-title">{{ .Title }}</h1>
+        <p class="hero-excerpt">{{ .Summary | truncate 200 }}</p>
+      </div>
+      <div class="hero-meta">
+        <span class="hero-author">{{ .Params.author | default $.Site.Params.author }}</span>
+        <span class="hero-date">{{ .Date.Format "02 Jan 2006" }} · {{ .ReadingTime }} phút đọc</span>
+      </div>
+    </div>
+    <div class="hero-img">
+      {{ if .Params.cover }}
+        <img src="{{ .Params.cover }}" alt="{{ .Title }}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+      {{ else }}
+        <div class="hero-code-art"><pre>{{ .Params.snippet | default "// SysNetHub\nfn main() {\n  loop { learn(); }\n}" }}</pre></div>
+      {{ end }}
+    </div>
+  </a>
+</div>
+{{ end }}
+
+<!-- SECTION HEADER -->
+<div class="section-header">
+  <span class="section-title">// Tất cả bài viết</span>
+  <div class="section-line"></div>
+</div>
+
+<!-- POSTS GRID -->
+<div class="posts-grid">
+  {{ range (after 1 $posts) }}
+  <a class="post-card" href="{{ .Permalink }}">
+    <div class="post-img">
+      {{ if .Params.cover }}
+        <img src="{{ .Params.cover }}" alt="{{ .Title }}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+      {{ else }}
+        <div class="post-img-code"><pre>{{ .Params.snippet | default (printf "// %s" .Title) }}</pre></div>
+      {{ end }}
+      {{ with index .Params.tags 0 }}
+      <span class="img-tag">{{ . }}</span>
+      {{ end }}
+    </div>
+    <div class="post-body">
+      {{ with .Params.tags }}
+      <div class="post-tags">{{ range . }}<span class="post-tag">{{ . }}</span>{{ end }}</div>
+      {{ end }}
+      <div class="post-title">{{ .Title }}</div>
+      <div class="post-excerpt">{{ .Summary | truncate 120 }}</div>
+      <div class="post-footer">
+        <span class="post-author">{{ .Params.author | default $.Site.Params.author }}</span>
+        <span class="post-date">{{ .Date.Format "02/01/2006" }} · {{ .ReadingTime }}m</span>
+      </div>
+    </div>
+  </a>
+  {{ end }}
+</div>
+
+{{ if eq (len $posts) 0 }}
+<div class="empty-state">
+  <div>$ find ./content/posts -name "*.md" | wc -l</div>
+  <div style="opacity:.5;margin-top:.5rem">0 — Chưa có bài viết. Tạo file đầu tiên trong content/posts/</div>
+</div>
+{{ end }}
+
+{{ end }}

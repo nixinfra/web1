@@ -1,0 +1,90 @@
+# ═══════════════════════════════════
+# hugo.toml — SysNetHub site config
+# Đặt file này ở ROOT của repo bạn
+# ═══════════════════════════════════
+
+baseURL       = "https://nixinfra.com/"
+languageCode  = "vi"
+defaultContentLanguage = "vi"
+title         = "SysNetHub"
+theme         = "sysnethub"          # tên folder trong /themes/
+
+# Phân trang
+paginate = 12
+
+# Tạo file tìm kiếm
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Thông tin site
+[params]
+  description = "Your Hub for Practical, Essential Knowledge in Network and System Infrastructure."
+  author      = "SysNetHub"
+  tagline     = "Net/Sys is Fun!"
+  # disqus    = "your-disqus-shortname"   # bỏ comment nếu dùng Disqus
+
+# Menu sidebar — thêm/sửa tuỳ ý
+# Pre = icon SVG inline (tuỳ chọn)
+[[menus.main]]
+  name   = "Tất cả bài viết"
+  url    = "/"
+  weight = 1
+
+[[menus.main]]
+  name   = "QUIZ"
+  url    = "/tags/quiz/"
+  weight = 2
+
+[[menus.main]]
+  name   = "LAB"
+  url    = "/tags/lab/"
+  weight = 3
+
+[[menus.main]]
+  name   = "NOTES"
+  url    = "/tags/notes/"
+  weight = 4
+
+[[menus.main]]
+  name   = "DevOps"
+  url    = "/tags/devops/"
+  weight = 5
+
+[[menus.main]]
+  name   = "Backend"
+  url    = "/tags/backend/"
+  weight = 6
+
+[[menus.main]]
+  name   = "About"
+  url    = "/about/"
+  weight = 10
+
+[[menus.main]]
+  name   = "Privacy Policy"
+  url    = "/privacy/"
+  weight = 11
+
+[[menus.main]]
+  name   = "Terms of Use"
+  url    = "/terms/"
+  weight = 12
+
+[[menus.main]]
+  name   = "Contact"
+  url    = "/contact/"
+  weight = 13
+
+# Taxonomy
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+
+# Markdown
+[markup.goldmark.renderer]
+  unsafe = true          # cho phép HTML trong markdown
+[markup.highlight]
+  style              = "monokai"
+  lineNos            = false
+  codeFences         = true
+  guessSyntax        = true
